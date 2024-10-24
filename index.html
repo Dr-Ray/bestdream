@@ -22,13 +22,15 @@
 
 <body>
     <div class="r-app">
-        <div class="content h-dvh bg-pink-200 relative overflow-hidden">
+        <div class="content min-h-dvh relative overflow-hidden">
             <div id="preloader" class="preloader fixed top-0 left-0 h-full w-full flex felx-col justify-center items-center z-[100]" style="background-color: #000011;">
                 <img src="/assets/images/loader.gif" alt="">
             </div>
             <div class="header flex flex-row justify-between items-center p-4">
                 <div class="logo">
-                    Logo
+                    <a href="/">
+                        BDL
+                    </a>
                 </div>
                 <ul id="sidebar"
                     class="sidebar transition-all absolute h-full z-50 flex flex-col top-[0] right-[-400px] w-80 max-w-[calc(100%-3rem)] p-6 bg-slate-800 md:flex-row md:gap-4 md:bg-transparent md:relative md:w-full md:gap-2 md:p-0 md:justify-center md:right-[0]">
@@ -83,24 +85,27 @@
                 </div>
             </div>
             <div class="overlay-close absolute h-0 w-0 top-0 z-10" id="close"></div>
-            <div class="content-body" style="background-image: url('/assets/images/homepage.png'); background-size: cover;background-position: center;">
-                <h1 class="text-center font-bold text-4xl py-6">BEST DREAM LIFE</h1>
+            <div class="content-body overflow-x-hidden overflow-y-auto mb-2" style="background-image: url('/assets/images/homepage.png'); background-size: cover;background-position: center;">
+                <div class="relative w-full md:w-80 mx-auto h-36">
+                    <img src="/assets/images/1.png" class="relative" alt="">
+                    <img src="/assets/images/2.png" class="relative" alt="">
+                </div>
                 <div class="w-full md:w-[600px] mx-auto relative h-96">
                     <img src="/assets/images/Home1.1.png" class="absolute min-h-40 md:max-h-96 left-[-150px] md:left-[0px]" alt="">
                     <img src="/assets/images/Home1.3.png" class="absolute min-h-40 md:max-h-96 left-[-90px] md:left-[-80px]" alt="">
                     <img src="/assets/images/Home page 3.png" class="absolute min-h-40 md:max-h-96 left-[-30px] md:left-[-150px]" alt="">
                     <img src="/assets/images/Home1.5.png" class="absolute min-h-40 md:max-h-96 right-[-30px] md:right-[-100px]" alt="">
                     <img src="/assets/images/home page 2.png" class="absolute min-h-40 md:max-h-96 right-[-80px] md:right-[-200px]" alt="">
-                    <img src="/assets/images/Glamour Girl (6)300dpi.png" class="absolute min-h-40 md:max-h-96 right-[-130px] md:right-[0px]" alt="">
+                    <img src="/assets/images/wn-removebg-preview.png" class="absolute min-h-40 md:max-h-96 right-[-130px] md:right-[0px]" alt="">
                 </div>
                 <div class="w-full md:w-[600px] mx-auto flex flex-row overflow-x-hidden">
-                    <img src="/assets/images/barrier.png" class="absolute left-[-20px] md:left-[-10px] top-[230px]" alt="">
-                    <img src="/assets/images/barrier.png" class="absolute right-[-40px] md:right-[-20px] top-[230px]" alt="">
+                    <img src="/assets/images/barrier.png" class="absolute left-[-20px] md:left-[-10px] top-[290px]" alt="">
+                    <img src="/assets/images/barrier.png" class="absolute right-[-40px] md:right-[-20px] top-[290px]" alt="">
                 </div>
                 
             </div>
-            <div class="w-full text-center md:w-96 mx-auto py-6 px-4 z-10">
-                <a href="#dd" class="block relative rounded-xl w-full md:w-96 text-slate-400 py-4 bg-purple-800 hover:text-white font-bold text-center">Begin Journey</a>
+            <div class="w-full text-center md:w-96 mx-auto py-3 px-4 z-10">
+                <a href="#dd" class="block relative rounded-xl w-full md:w-96 text-slate-400 py-4 bg-purple-800 hover:text-white font-bold text-center text-upper">Begin Journey</a>
             </div>
         </div>
     </div>
