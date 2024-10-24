@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Best Dream Life</title>
+    <style>
+        *,
+        html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="r-app">
+        <div class="content h-dvh bg-pink-200 relative overflow-hidden">
+            <div class="header flex flex-row justify-between items-center p-4">
+                <div class="logo">
+                    Logo
+                </div>
+                <ul id="sidebar"
+                    class="sidebar transition-all absolute h-full z-50 flex flex-col top-[0] right-[-400px] w-80 max-w-[calc(100%-3rem)] p-6 bg-slate-800 md:flex-row md:gap-4 md:bg-transparent md:relative md:w-full md:gap-2 md:p-0 md:justify-center md:right-[0]">
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center w-full py-2 transition-all linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-home md:hidden" style="width: 28px;"></i> <span>HOME</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center  w-full py-2 transition linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-plane md:hidden" style="width: 28px;"></i> <span>TRAVEL</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center  w-full py-2 transition linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-paint-brush md:hidden" style="width: 28px;"></i> <span>DESIGN</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center  w-full py-2 transition linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-store md:hidden" style="width: 28px;"></i> <span>SHOPPING</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center  w-full py-2 transition linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-couch md:hidden" style="width: 28px;"></i> <span>DINING</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center  w-full py-2 transition linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-image md:hidden" style="width: 28px;"></i> <span>WEDDING</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center  w-full py-2 transition linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-building md:hidden" style="width: 28px;"></i> <span>HOMES</span></a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex flex-row gap-2 items-center  w-full py-2 transition linear hover:text-purple-800 font-bold"><i
+                                class="fa fa-calendar-alt md:hidden" style="width: 28px;"></i> <span>ACTIVITY</span></a>
+                    </li>
+                </ul>
+                <div class="md:hidden cursor-pointer" id="open">
+                    <i class="fa fa-navicon"></i>
+                </div>
+            </div>
+            <div class="overlay-close absolute h-0 w-0 top-0 z-10" id="close"></div>
+            <div class="content-body">
+                <h1 class="text-center font-bold text-4xl py-6">BEST DREAM LIFE</h1>
+                <div class="w-full md:w-[600px] mx-auto relative h-96">
+                    <img src="/assets/images/Home1.1.png" class="absolute min-h-40 md:max-h-96 left-[-150px] md:left-[-250px]" alt="">
+                    <img src="/assets/images/Home1.3.png" class="absolute min-h-40 md:max-h-96 left-[-90px] md:left-[-150px]" alt="">
+                    <img src="/assets/images/Home page 3.png" class="absolute min-h-40 md:max-h-96 left-[-30px] md:left-[-150px]" alt="">
+                    <img src="/assets/images/Home1.5.png" class="absolute min-h-40 md:max-h-96 left-[30px] md:left-[-50px]" alt="">
+                    <img src="/assets/images/home page 2.png" class="absolute min-h-40 md:max-h-96 right-[-80px] md:left-[-250px]" alt="">
+                    <img src="/assets/images/Glamour Girl (6)300dpi.png" class="absolute min-h-40 md:max-h-96 right-[-130px] md:left-[-350px]" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let sidebar = document.querySelector('#sidebar');
+        let openbar = document.querySelector('#open');
+        let closebar = document.querySelector('#close');
+
+        openbar.onclick = (e) => {
+            sidebar.classList.remove('right-[-400px]');
+            closebar.classList.remove('h-0', 'w-0');
+
+            sidebar.classList.add('right-[0]');
+            closebar.classList.add('h-full', 'w-full');
+        }
+        closebar.onclick = (e) => {
+            e.target.classList.remove('h-full', 'w-full');
+            e.target.classList.add('h-0', 'w-0');
+
+            sidebar.classList.remove('right-[0]');
+            sidebar.classList.add('right-[-400px]');
+        }
+    </script>
+</body>
+
+</html>
